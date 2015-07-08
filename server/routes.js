@@ -8,7 +8,7 @@ var errors = require('./components/errors');
 
 module.exports = function(app) {
 
-  var basePath = '/v2/';
+  var basePath = '/v2';
   // Insert routes below
   app.use(basePath + '/api/things', require('./api/thing'));
   app.use(basePath + '/api/users', require('./api/user'));
